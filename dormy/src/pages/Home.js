@@ -7,7 +7,7 @@ const Home = () => {
     }
     return (
         <>
-        <Nav/>
+        <Nav scale={false}/>
         <div className="home">
             <h1>Swipe Right</h1>
             <button className="main-button" onClick={handleClicking}>
