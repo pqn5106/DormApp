@@ -1,12 +1,15 @@
-import logo from '../images/Roomy-logos_white.png'
+import whiteLogo from '../images/Roomy-logos_white.png'
 import blackLogo from '../images/Roomy-logos_black.png'
 
-const Nav = ({scale}) => {
+const Nav = ({scale, authenticated}) => {
     return (
         <nav>
             <div className='logo-container'>
-                <img className='logo' src={scale ? blackLogo : logo} width="200" alt=''/>
+                <img className='logo' src={scale ? blackLogo : whiteLogo} width="200" alt=''/>
             </div>
+            
+            {!authenticated && <button className='navigation-button'>Log In</button>}
+
         </nav>
     )
 }
