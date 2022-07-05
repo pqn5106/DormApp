@@ -8,7 +8,7 @@ const Nav = ({scale, authenticated}) => {
                 <img className='logo' src={scale ? blackLogo : whiteLogo} width="200px" height="40px" alt=''/>
             </div>
             
-            {!authenticated && <button className='navigation-button'>Log In</button>}
+            {!authenticated && !scale && <button className='navigation-button'>Log In</button>}
 
         </nav>
     )
