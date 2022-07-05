@@ -6,7 +6,7 @@ const Home = () => {
         console.log('clicked')
     }
     return (
-        <>
+        <div className="nav-overlay">
         <Nav scale={false} authenticated={authenticated}/>
         <div className="home">
             <h1>Swipe Right</h1>
@@ -14,7 +14,7 @@ const Home = () => {
                 {authenticated ? 'Signout' : 'Create Account'}
             </button>
         </div>
-        </>
+        </div>
     )
 }
 export default Home

@@ -5,7 +5,7 @@ const Nav = ({scale, authenticated}) => {
     return (
         <nav>
             <div className='logo-container'>
-                <img className='logo' src={scale ? blackLogo : whiteLogo} width="500" height="50" alt=''/>
+                <img className='logo' src={scale ? blackLogo : whiteLogo} width="200px" height="40px" alt=''/>
             </div>
             
             {!authenticated && <button className='navigation-button'>Log In</button>}
